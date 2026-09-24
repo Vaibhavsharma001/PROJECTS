@@ -13,3 +13,23 @@ def speak(text):
 if __name__ == "__main__":
     speak("initializing ultron.....")
     
+    while True:
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+            print("Say something!")
+            audio = r.listen(source)
+            
+        try:
+            command = r.recognize_google(audio)
+            print(command)
+        except sr.UnknownValueError:
+            print("Sphinx could not understand audio")
+        except sr.RequestError as e:
+            print("Sphinx error; {0}".format(e))
+
+        
+
+      
+
+    
+
