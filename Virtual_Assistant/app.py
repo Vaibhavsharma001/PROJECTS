@@ -19,6 +19,36 @@ def processcommand(c):
 
     elif "open github" in c.lower():
         webbrowser.open("https://github.com")
+
+    elif "open linkedin" in c.lower():
+        webbrowser.open("https://linkedin.com")
+
+    elif "open instagram" in c.lower():
+        webbrowser.open("https://instagram.com")
+
+    elif "open facebook" in c.lower():
+        webbrowser.open("https://facebook.com")
+
+    elif "open twitter" in c.lower():
+        webbrowser.open("https://twitter.com")
+        
+    elif "open reddit" in c.lower():
+        webbrowser.open("https://reddit.com")
+
+    elif "open amazon" in c.lower():
+        webbrowser.open("https://amazon.in")
+
+    elif "open netflix" in c.lower():
+        webbrowser.open("https://netflix.com")
+
+    elif "open spotify" in c.lower():
+        webbrowser.open("https://spotify.com")
+
+    elif "open wikipedia" in c.lower():
+        webbrowser.open("https://wikipedia.org")
+
+    elif "open chatgpt" in c.lower():
+        webbrowser.open("https://chatgpt.com")
     
 if __name__ == "__main__":
     speak("initializing ultron.....")
