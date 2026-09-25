@@ -1,6 +1,8 @@
 import speech_recognition as sr
 import webbrowser
-import pyttsx3 
+import pyttsx3
+import musiclibrary
+
 
 
 
@@ -49,7 +51,12 @@ def processcommand(c):
 
     elif "open chatgpt" in c.lower():
         webbrowser.open("https://chatgpt.com")
-    
+        
+    elif c.lower().startswith("play"):
+        song = c.lower().split(" ")[1]
+        link = musiclibrary.music[song]
+        webbrowser.open(link)
+
 if __name__ == "__main__":
     speak("initializing ultron.....")
     
@@ -63,7 +70,7 @@ if __name__ == "__main__":
                 print("recognizing...")  
             word = r.recognize_google(audio)
             if word.lower() == "ultron":
-                speak("Yes Vaibhav, I am listening")
+                speak("ya")
                 
                 print("Ultron Active")
                 with sr.Microphone() as source:

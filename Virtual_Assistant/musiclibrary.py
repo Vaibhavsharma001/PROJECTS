@@ -1,0 +1,16 @@
+music = {
+    "shape of you": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+    "blinding lights": "https://www.youtube.com/watch?v=4NRXx6U8ABQ",
+    "bad guy": "https://www.youtube.com/watch?v=4NRXx6U8ABQ",
+    "drivers license": "https://www.youtube.com/watch?v=ZmDBbnmKpqQ",
+    "good 4 u": "https://www.youtube.com/watch?v=gNi_6u-kOeE",
+    "levitating": "https://www.youtube.com/watch?v=TUVcZfQe7Zs",
+    "peaches": "https://www.youtube.com/watch?v=tQ0yjYUFK8",
+    "montero": "https://www.youtube.com/watch?v=6swmTBVIwFE",
+    "stay": "https://www.youtube.com/watch?v=kTJczUoc26U",
+    "believer": "https://www.youtube.com/watch?v=7wtfhZwyrcc",
+    "senorita": "https://www.youtube.com/watch?v=Pkh8UtuewT0",
+    "rockstar": "https://www.youtube.com/watch?v=UceaB4DrW_M",
+    "sunflower": "https://www.youtube.com/watch?v=ApXoWvf5-6U",
+    "happier": "https://www.youtube.com/watch?v=ZbZSeb2KTaQ",
+}
