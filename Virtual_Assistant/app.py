@@ -3,12 +3,12 @@ import webbrowser
 import pyttsx3 
 
 
-recognizer = sr.Recognizer()
-engine= pyttsx3.init()
 
 def speak(text):
+    engine= pyttsx3.init()
     engine.say(text)
     engine.runAndWait()
+    engine.stop()
     
 def processcommand(c):
     if "open google" in c.lower():
@@ -62,15 +62,16 @@ if __name__ == "__main__":
                 audio = r.listen(source,timeout=2,phrase_time_limit=1)
                 print("recognizing...")  
             word = r.recognize_google(audio)
-            if(word.lower()=="ultron"):
-                speak("ya")
+            if word.lower() == "ultron":
+                speak("Yes Vaibhav, I am listening")
                 
+                print("Ultron Active")
                 with sr.Microphone() as source:
                     print("Ultron Active")
                     audio = r.listen(source)
                     command = r.recognize_google(audio)
                     
-                    processcommand(command)
+                processcommand(command)
                     
         except sr.WaitTimeoutError:
             print("Listening timed out")     
